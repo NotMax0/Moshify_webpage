@@ -199,7 +199,7 @@ a {
 }
 
 .btn--block {
-    /* because ancoher elements are inline by default
+    /* because anchor elements are inline by default
         so the defined width won't work. */
     display: inline-block;
     width: 100%;
@@ -216,6 +216,27 @@ a {
 
 @media screen and (min-width: 1024px) {
     .btn {
+        font-size: 1.5rem;
+    }
+}
+
+/* Inputs */
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    color: var(--color-headings);
+    font-size: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
         font-size: 1.5rem;
     }
 }
